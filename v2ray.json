@@ -1,0 +1,31 @@
+{
+  "inbounds": [
+    {
+      "port": 2333,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "UUID",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "http",
+        "httpSettings": {
+          "host": [
+            "HOST"
+          ],
+          "path": "PATH"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
