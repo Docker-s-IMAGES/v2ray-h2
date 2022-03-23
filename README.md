@@ -12,5 +12,5 @@ docker run --rm --name v2ray -p "127.0.0.1:2333:2333" -d ghcr.io/docker-s-images
 ## Caddy
 
 ```
-reverse_proxy /confusion 127.0.0.1:2333
+reverse_proxy /confusion h2c://127.0.0.1:2333
 ```
