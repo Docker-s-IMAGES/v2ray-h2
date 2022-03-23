@@ -1,6 +1,6 @@
-# v2ray-ws
+# v2ray-h2
 
-一键启动 v2ray with websocket
+一键启动 v2ray with http2
 
 ```
 docker run --rm --name v2ray -p "127.0.0.1:2333:2333" -d ghcr.io/docker-s-images/v2ray-h2:main DOMAIN [PATH] [UUID]
