@@ -22,10 +22,10 @@ echo "路径："$path
 echo ""
 echo "安卓客户端 v2rayNG 配置链接："
 echo -e "vmess://\c"
-echo '{"add":"DOMAIN","aid":"64","host":"","id":"UUID","net":"h2","path":"PATH","port":"443","ps":"DOMAIN","sni":"","tls":"tls","type":"auto","v":"2"}' | sed -e "s@DOMAIN@${domain}@" -e "s@DOMAIN@${domain}@" -e "s@PATH@${path}@" -e "s@UUID@${uuid}@" | base64
+echo '{"add": "DOMAIN", "aid": "0", "host": "", "id": "UUID", "net": "h2", "path": "PATH", "port": "443", "ps": "DOMAIN", "sni": "", "tls": "tls", "type": "auto", "v": "2"}' | sed -e "s@DOMAIN@${domain}@" -e "s@DOMAIN@${domain}@" -e "s@PATH@${path}@" -e "s@UUID@${uuid}@" | base64
 echo "电脑客户端 v2rayN 配置链接："
 echo -e "vmess://\c"
-echo '{"v": "2", "ps": "", "add": "DOMAIN", "port": "443", "id": "UUID", "aid": "64", "scy": "none", "net": "h2", "type": "auto", "host": "", "path": "PATH", "tls": "tls", "sni": "DOMAIN"}' | sed -e "s@DOMAIN@${domain}@" -e "s@DOMAIN@${domain}@" -e "s@PATH@${path}@" -e "s@UUID@${uuid}@" | base64
+echo '{"v": "2", "ps": "", "add": "DOMAIN", "port": "443", "id": "UUID", "aid": "0", "scy": "none", "net": "h2", "type": "auto", "host": "", "path": "PATH", "tls": "tls", "sni": "DOMAIN"}' | sed -e "s@DOMAIN@${domain}@" -e "s@DOMAIN@${domain}@" -e "s@PATH@${path}@" -e "s@UUID@${uuid}@" | base64
 
 
 /usr/bin/v2ray -config /src/v2ray.json
