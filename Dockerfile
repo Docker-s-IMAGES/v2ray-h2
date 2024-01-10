@@ -15,9 +15,7 @@ RUN apk upgrade --update \
     && pwd \
     && unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray/ \
     && mv /tmp/v2ray/v2ray /usr/bin \
-    # && mv /tmp/v2ray/v2ctl /usr/bin \
     && chmod +x /usr/bin/v2ray \
-    # && chmod +x /usr/bin/v2ctl \
     && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
     && echo ${TZ} > /etc/timezone \
     && rm -rf /tmp/v2ray /var/cache/apk/* \
