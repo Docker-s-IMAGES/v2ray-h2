@@ -28,4 +28,4 @@ echo -e "vmess://\c"
 echo '{"v": "2", "ps": "DOMAIN", "add": "DOMAIN", "port": "443", "id": "UUID", "aid": "0", "scy": "auto", "net": "h2", "type": "none", "host": "DOMAIN", "path": "PATH", "tls": "tls", "sni": "DOMAIN"}' | sed -e "s@DOMAIN@${domain}@g" -e "s@PATH@${path}@g" -e "s@UUID@${uuid}@g" | base64
 
 
-/usr/bin/v2ray -config /src/v2ray.json
+/usr/bin/v2ray run -c /src/v2ray.json
