@@ -23,4 +23,4 @@ RUN apk upgrade --update \
 
 COPY . /src
 
-ENTRYPOINT [ "sh", "/src/setup.sh"]
+CMD [ "sh", "/src/setup.sh"]
